@@ -1,0 +1,11 @@
+sp_pic = imread ("sample.png");
+R = im2double (sp_pic(:,:,1));
+G = im2double (sp_pic(:,:,2));
+B = im2double (sp_pic(:,:,3));
+R = R * 0.299;
+G = G * 0.587;
+B = B * 0.114;
+gray_pic = imadd (R,G);
+gray_pic = imadd (gray_pic,B);
+figure;
+imshow (gray_pic); 

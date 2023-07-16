@@ -1,0 +1,12 @@
+sp = imread ("rose.jpeg");
+imshow(sp);
+L = 2^8;
+sp_neg = (L-1) - sp;
+figure;
+imshow(sp_neg);
+sp_gray = rgb2gray(sp);
+figure;
+imshow(sp_gray);
+sp_gray_neg = (L-1) - sp_gray;
+figure;
+imshow(sp_gray_neg);
